@@ -133,6 +133,33 @@ a:after {
 
 /* WRAP SECTIONS */
 
+#welcome {
+    background-color: #f7f4e0;
+    position: relative;
+    overflow: hidden;
+}
+
+#welcome img {
+    max-height: 100%;
+    min-width: 400px;
+}
+
+#greeting {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 250px;
+}
+
+#greeting h1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#greeting h1 span {
+    font-family: 'Kaushan Script', cursive;
+}
+
 #about {
 	padding-top: 70px;
 	padding-bottom: 70px;
@@ -218,4 +245,18 @@ a:after {
 
 .fa-print, .fa-file {
 	color: #fff;
+}
+
+.fa-star {
+    font-size: 4em;
+    color: #000;
+}
+
+/*Media Queries*/
+@media screen and (max-width:1400px) {
+    #greeting { top: 375px; width: 90%; text-align: right;}
+}
+
+@media screen and (min-width:1401px) {
+    #greeting { top: 250px; }
 }
